@@ -17,6 +17,9 @@
 # create virtual environment - if it doesn't exist [ if directory (-d) does NOT (!) exist ]
 [ ! -d ./venv ] && python -m venv venv
 
+# activate virtual environment
+. venv/bin/activate
+
 # upgarde pip
 python -m pip install --upgrade pip
 
