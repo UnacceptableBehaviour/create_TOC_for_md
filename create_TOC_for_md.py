@@ -2,10 +2,10 @@
 # 3.7 / 3.9
 #
 # get this file
-# curl https://raw.githubusercontent.com/UnacceptableBehaviour/algorithms/master/create_TOC_for_md.py > create_TOC_for_md.py
+# curl https://github.com/UnacceptableBehaviour/create_TOC_for_md/raw/main/create_TOC_for_md.py > create_TOC_for_md.py
 #
 # render.py REQUIRED in same dir as this file for local latex support - get it with
-# curl https://raw.githubusercontent.com/UnacceptableBehaviour/algorithms/master/render.py > render.py
+# curl https://github.com/UnacceptableBehaviour/create_TOC_for_md/raw/main/render.py > render.py
 #
 # create markdown for TOC
 # set DEFAULT_DOC_TO_PROCESS to relevant RTF course notes
