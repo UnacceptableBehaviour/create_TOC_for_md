@@ -234,13 +234,12 @@ Activation function decides, whether a neuron should be activated or not by c
 
 
 ## References  
-readme2tex Python module [ref here](https://pypi.org/project/readme2tex/).  
-Latex Project [download info](https://www.latex-project.org/get/).  
 GitHub Markdown [getting started](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).  
 Quick [Latex primer](https://github.com/UnacceptableBehaviour/latex_maths/blob/master/intro_to_latex.md) w/ links to ref sheets.  
 [Latex Cheat Sheet](https://www.nyu.edu/projects/beber/files/Chang_LaTeX_sheet.pdf)    
-[Comprehensive Latex Symbol List](http://mirror.ox.ac.uk/sites/ctan.org/info/symbols/comprehensive/symbols-a4.pdf)  
-
+[Comprehensive Latex Symbol List](http://mirror.ox.ac.uk/sites/ctan.org/info/symbols/comprehensive/symbols-a4.pdf)   
+Latex Project [download info](https://www.latex-project.org/get/).  
+readme2tex Python module [ref here](https://pypi.org/project/readme2tex/).  
   
 ---
 
