@@ -4,7 +4,7 @@ See [References](#refs---12-activation-functions) for example linking to content
 
 
 ## Abstract
-Repository introduction.  
+This Readme.md is 50% example of the kind of readme that can but pushed to repo in one command (including rendering embedded latex), and 50% [instruction](#how-to-use-this-tool) on how to install and use it. Initially I was using Texify to add the maths equations, but one day it stopped working and all my maths content went up in smoke so I created this as a temporary solution. It requires the installation of [Latex](https://www.latex-project.org/get/) and [readme2tex](https://pypi.org/project/readme2tex/) to render the SVG files which form the maths content.
 
 ## Progress
 KEY: (:white_check_mark:) watched, (:mag:) rewatch, (:flashlight:) unseen / to watch, (:question:) problem / open question  
@@ -44,18 +44,34 @@ To be able to maintain a Readme.md doc with a table of contents and Latex equati
 
 
 ## How to use this tool.  
-### Installing in repo
+### Installing in repo  
+Download the install file:  
+```
+cd /lang/ruby/repos/nutri_scrape                      # cd into relevant repo root directory
+                                                      # download install file
+curl -L https://github.com/UnacceptableBehaviour/create_TOC_for_md/raw/main/install_createTOC.sh > install_createTOC.sh
+chmod +x install_createTOC.sh                         # make it executable
+./install_createTOC.sh                                # run it
+```
 
+  
 ### Readme source RTF file
-
+  
 ### Comments
-
+The source file can contain comments that will be removed from the copy that is put in the Readme.md file:  
+```/ / * ```  
+inside C esque comments will be removed by the create_TOC_for_md.py script.  
+As shown at the start and end of this section.  
+Allows tidy up of what is pushed to git - useful for work in progress or notes  
+```* / /```  
+  
 ### The TOC
-
+  
 ### Adding maths equations to Readme.md
-
+  
 ### Updating the Readme.md file
-
+Simple running 
+  
 
 ## Some examples of Readme.md content  
 ### 11 - Softmax and Cross Entropy  
