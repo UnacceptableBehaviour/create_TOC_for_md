@@ -194,7 +194,7 @@ def process_tex_to_svg(match):#, image_dir=DEFAULT_SVG_LATEX):
     # line from texify
     # let readme2tex = `python -m readme2tex --nocdn --output ./scratch/tex --project ${this.push.repository.name} --svgdir ./scratch/svg --username ${this.push.repository.owner.name} ${tmpInputPath}`
     #
-    # installed reeadmetex - https://pypi.org/project/readme2tex/
+    # installed reeadme2tex - https://pypi.org/project/readme2tex/
     # python -m readme2tex --nocdn --output ${tmpOutputPath} --project ${this.push.repository.name} --svgdir ${svgOutputPath} --username ${this.push.repository.owner.name} ${tmpInputPath}`
 
     # this generates svg file
@@ -286,7 +286,7 @@ def process_tex_to_svg(match):#, image_dir=DEFAULT_SVG_LATEX):
     # https://stackoverflow.com/questions/9588261/converting-a-latex-code-to-mathml-or-svg-code-in-python
 
     # is there something up with githooks stopping Texify running?
-    # is there
+
 
 
 if __name__ == '__main__':
@@ -370,6 +370,6 @@ if __name__ == '__main__':
         print(f"\n\n{return_code}\n")
 
 
-    #print(f"\n\n{toc_string}\n\n")
+    print(f"\n\n{toc_string}\n\n")
 
     print(f"\n\nREPORT / NOTES:\n{report}")

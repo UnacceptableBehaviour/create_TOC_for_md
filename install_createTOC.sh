@@ -23,8 +23,11 @@
 # upgarde pip
 python -m pip install --upgrade pip
 
-# install rtf to text conversion support      
+# install rtf to text conversion support
 pip install striprtf
+
+# install latex to svg conversion support - is this needed w/ the adapted render.py file?
+#pip install readme2tex
 
 # download create_TOC_for_md.py
 curl -L https://github.com/UnacceptableBehaviour/create_TOC_for_md/raw/main/create_TOC_for_md.py > create_TOC_for_md.py
