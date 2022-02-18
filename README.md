@@ -105,9 +105,22 @@ Generates:
 See [References](#references) for latex notation.  
   
 ### Updating the Readme.md file
-Simple running  
+Use default source & target, print **Readme.md**  followed by **TOC**, followed by **report** to screen.  
+No push to repo.  
+```
+create_TOC_for_md.py
+```
+  
+Use default source & target, print **Readme.md**  followed by **TOC**, followed by **report** to screen.  
+PUSH to repo.  
 ```
 create_TOC_for_md.py -p
+```
+  
+**Specify source** & default target, print **Readme.md**  followed by **TOC**, followed by **report** to screen.  
+PUSH to repo. (Remove -p to diasable pushing to repo)  
+```
+create_TOC_for_md.py alternative_Readme_source.rtf -p
 ```
   
 ---
