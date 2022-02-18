@@ -56,23 +56,33 @@ Download install file.
 curl -L https://github.com/UnacceptableBehaviour/create_TOC_for_md/raw/main/install_createTOC.sh > install_createTOC.sh
 ```
   
-Make it executable., and execute.
+Make it executable, and execute.
 ```
 chmod +x install_createTOC.sh
 ./install_createTOC.sh
 ```
   
+A new Readme.md file can now be created using ```**create_TOC_for_md.py**```. (see below for options)  
+En example Readme source RTF file will be in the repo_root/scratch directory.  
+  
 ### Readme source RTF file
+create_TOC_for_md.py converts the [Readme source RTF](https://github.com/UnacceptableBehaviour/create_TOC_for_md/blob/main/scratch/EG_README_source.rtf) into text.  
+Then scans is for comments which are removed.  
+Next a TOC is created from the titles in the document.  
+The TOC is inserted between ## Contents & ## AIM: title so any edits between these title will disappear.  
+**DO NOT EDIT THESE TITLES**.  
+Next, the text is scan for double dollar Latex equation delimiters, SVG are created and pushed to the repo.  
+Links to these SVG file are inserted in place of the equation description in the final Readme.md.  
 DEFAULT_DOC_TO_PROCESS = Path('./scratch/EG_README_source.rtf')  
 DEFAULT_README_RENDER_TEX_LOCAL = Path('./README.md')  
   
 ### Comments
-The source file can contain comments that will be removed from the copy that is put in the Readme.md file:  
-```/ / * ```  
+The Readme source RTF file can contain comments that will be removed from the copy that is put in the Readme.md file:  
+  
+![show comments](https://github.com/UnacceptableBehaviour/create_TOC_for_md/blob/main/tex/comment_sections.png)  
 inside C esque comments will be removed by the create_TOC_for_md.py script.  
-As shown at the start and end of this section.  
-Allows tidy up of what is pushed to git - useful for work in progress or notes  
-```* / /```  
+As shown at the start and end in red.  
+This allows a tidy up of what is pushed to git - useful for work in progress or notes.  
   
 ### The TOC
 On the left of the Readme.md file title bar on GitHub is a burger menu that displays the contents based on the heading in the file.
