@@ -1,6 +1,6 @@
-# Introduction to this REPO
+# Automake TOC for repo & add Latex maths to Readme.md
 REPO: [create_TOC_for_mark_down](https://gist.github.com/UnacceptableBehaviour/ad168b1b86a7695e9391ff063550c340)  
-See [References](#references) for links to course content  
+See [References](#refs---12-activation-functions) for example linking to contents  
 
 
 ## Abstract
@@ -17,8 +17,14 @@ Add table later if relevant.
 1. [Abstract](#abstract)  
 2. [Progress](#progress)  
 3. [Contents](#contents)  
-4. [AIM:](#aim)  
+4. [AIM: maintain a Readme.md doc with a table of contents and Latex equations!](#aim-maintain-a-readmemd-doc-with-a-table-of-contents-and-latex-equations)  
 5. [How to use this tool.](#how-to-use-this-tool)  
+	1. [Installing in repo](#installing-in-repo)  
+	2. [Readme source RTF file](#readme-source-rtf-file)  
+	3. [Comments](#comments)  
+	4. [The TOC](#the-toc)  
+	5. [Adding maths equations to Readme.md](#adding-maths-equations-to-readmemd)  
+	6. [Updating the Readme.md file](#updating-the-readmemd-file)  
 6. [Some examples of Readme.md content](#some-examples-of-readmemd-content)  
 	1. [11 - Softmax and Cross Entropy](#11---softmax-and-cross-entropy)  
 		1. [**Vid contents - 11 softmax & X-entropy**](#vid-contents---11-softmax--x-entropy)  
@@ -38,10 +44,20 @@ To be able to maintain a Readme.md doc with a table of contents and Latex equati
 
 
 ## How to use this tool.  
+### Installing in repo
+
+### Readme source RTF file
+
+### Comments
+
+### The TOC
+
+### Adding maths equations to Readme.md
+
+### Updating the Readme.md file
 
 
 ## Some examples of Readme.md content  
----
 ### 11 - Softmax and Cross Entropy  
 ([vid](https://www.youtube.com/watch?v=7q7E91pHoW4&list=PLqnslRFeH2UrcDBWF5mfPGpqQDSta6VK4&index=12)) - 
 ([code](https://github.com/UnacceptableBehaviour/pytorch_tut_00/blob/main/scripts/09_tensor_data_loader.py)) - 
@@ -55,21 +71,10 @@ To be able to maintain a Readme.md doc with a table of contents and Latex equati
 **0m**		| intro softmax maths
 **0m30**	| softmax formula
 **1m20**	| softmax diagram : scores, logits, probabilities (sum of probabilities = 1), prediction
-**1m40**	| code start
-**2m**		| softmax: numpy
-**2m53**	| softmax: torch
-**3m15**	| Cross-Entropy: measures the performance of the output model
 note		| better prediction = lower Cross-Entropy loss
 **4m05**	| One-Hot encoding: Each class represented by a single binary 1 on classificaton array [0,1,0,0]
-**4m30**	| Y hat: predicted probablities (softmax)
-**5m17**	| cross_entropy(Y actual, Y hat predicted)
-**6m50**	| cross_entropy: torch caveats/gotchas slide
 note		| nn.CrossEntropyLoss applies nn.LogSoftmax + nn NLLLoss (-ve log liklihood loss)
 note		| Y has class labels not one-hot
-note		| Y_pred (y hat) has raw scores (logits), no Softmax
-**7m50**	| cross_entropy torch: code
-**14m10**	| Neural Net w/ Softmax - slide - multi class
-**15m05**	| Neural Net w/ Softmax - code
 **16m30**	| Neural Net w/ Sigmoid - slide - binary
 **17m10**	| Neural Net w/ Sigmoid - code
 

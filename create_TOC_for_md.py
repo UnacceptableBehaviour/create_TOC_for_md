@@ -138,7 +138,7 @@ def create_TOC_as_string_from_TOC_nested_list(toc_list):
 DEFAULT_DOC_TO_PROCESS = Path('./scratch/EG_README_source.rtf')
 def get_mark_down(filename=DEFAULT_DOC_TO_PROCESS):
 
-    print(f"FILE_LOC***\n***\n{filename}\n***\n***\n")
+    print(f"SOURCE_FILE_LOC: {filename}\n*\n*\n*\n")
 
     with open(filename) as f:
         content = f.read()

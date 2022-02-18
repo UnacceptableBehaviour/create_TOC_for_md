@@ -4,7 +4,7 @@
 
 # cd into relevant repo root directory 
 # download this file:
-# curl https://github.com/UnacceptableBehaviour/create_TOC_for_md/raw/main/install_createTOC.sh > install_createTOC.sh
+# curl -L https://github.com/UnacceptableBehaviour/create_TOC_for_md/raw/main/install_createTOC.sh > install_createTOC.sh
 # chmod +x install_createTOC.sh                         # make it executable
 # ./install_createTOC.sh                                # run it
 
@@ -27,12 +27,12 @@ python -m pip install --upgrade pip
 pip install striprtf
 
 # download create_TOC_for_md.py
-curl https://github.com/UnacceptableBehaviour/create_TOC_for_md/raw/main/create_TOC_for_md.py > create_TOC_for_md.py
+curl -L https://github.com/UnacceptableBehaviour/create_TOC_for_md/raw/main/create_TOC_for_md.py > create_TOC_for_md.py
 
 chmod +x create_TOC_for_md.py
 
 # download modified render.py - if you need latex
-curl https://github.com/UnacceptableBehaviour/create_TOC_for_md/raw/main/render.py > render.py
+curl -L https://github.com/UnacceptableBehaviour/create_TOC_for_md/raw/main/render.py > render.py
 
 # -p make parent dirs as needed
 mkdir -p ./scratch/tex          
@@ -45,5 +45,5 @@ fi
 
 # download example rtf doc
 # DEFAULT_DOC_TO_PROCESS = Path('scratch/EG_README_source.rtf')
-curl https://github.com/UnacceptableBehaviour/create_TOC_for_md/raw/main/scratch/EG_README_source.rtf > scratch/EG_README_source.rtf
+curl -L https://github.com/UnacceptableBehaviour/create_TOC_for_md/raw/main/scratch/EG_README_source.rtf > scratch/EG_README_source.rtf
 
