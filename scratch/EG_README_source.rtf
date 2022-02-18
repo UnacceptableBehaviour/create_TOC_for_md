@@ -167,7 +167,7 @@ uses the same headings and creates set of indented contents links at the top of 
 \f1\b0 \cf0 \expnd0\expndtw0\kerning0
 \
 Maths equations can be inserted using latex notation surrounded by double dollar signs:  \
-![latex md](https://github.com/UnacceptableBehaviour/create_TOC_for_md/blob/main/tex/formula_latex.png)  \
+![latex md](https://github.com/UnacceptableBehaviour/create_TOC_for_md/blob/main/tex/formula_latex_red_double_dollar.png)  \
   \
 Generates:  \
 ![formula](https://github.com/UnacceptableBehaviour/create_TOC_for_md/blob/main/tex/formula.png)  \
@@ -181,10 +181,29 @@ Generates:  \
 \f0\b \cf8 \kerning1\expnd0\expndtw0 ### 
 \f1\b0 \cf0 \expnd0\expndtw0\kerning0
 Updating the Readme.md file\
-Simple running  \
+Use default source & target, print **Readme.md**  followed by **TOC**, followed by **report** to screen.  \
+No push to repo.  \
 ```\
 
-\f4\fs22 \cf6 \cb7 \kerning1\expnd0\expndtw0 \CocoaLigature0 create_TOC_for_md.py -p\
+\f4\fs22 \cf6 \cb7 \kerning1\expnd0\expndtw0 \CocoaLigature0 ./create_TOC_for_md.py\
+```
+\f1\fs30 \cf0 \cb1 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+  \
+Use default source & target, print **Readme.md**  followed by **TOC**, followed by **report** to screen.  \
+PUSH to repo.  \
+```\
+
+\f4\fs22 \cf6 \cb7 \kerning1\expnd0\expndtw0 \CocoaLigature0 ./create_TOC_for_md.py -p\
+```
+\f1\fs30 \cf0 \cb1 \expnd0\expndtw0\kerning0
+\CocoaLigature1 \
+  \
+**Specify source** & default target, print **Readme.md**  followed by **TOC**, followed by **report** to screen.  \
+PUSH to repo. (Remove -p to diasable pushing to repo)  \
+```\
+
+\f4\fs22 \cf6 \cb7 \kerning1\expnd0\expndtw0 \CocoaLigature0 ./create_TOC_for_md.py alternative_Readme_source.rtf -p\
 ```
 \f1\fs30 \cf0 \cb1 \expnd0\expndtw0\kerning0
 \CocoaLigature1 \
@@ -374,17 +393,12 @@ class NeuralNet(nn.Module):\
 ## References  \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\tx7919\tx9073\tx10180\tx11378\tx12485\tx13589\tx14721\tx15868\tx17025\tx20300\pardeftab720\pardirnatural\partightenfactor0
 
-\f1\b0 \cf0 readme2tex Python module [ref here](https://pypi.org/project/readme2tex/).  
-\f0\b \cf8 \
-
-\f1\b0 \cf0 Latex Project [download info](https://www.latex-project.org/get/).  
-\f0\b \cf8 \
-
 \f1\b0 \cf0 GitHub Markdown [getting started](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).  \
 Quick [Latex primer](https://github.com/UnacceptableBehaviour/latex_maths/blob/master/intro_to_latex.md) w/ links to ref sheets.  \
 [Latex Cheat Sheet](https://www.nyu.edu/projects/beber/files/Chang_LaTeX_sheet.pdf)    \
-[Comprehensive Latex Symbol List](http://mirror.ox.ac.uk/sites/ctan.org/info/symbols/comprehensive/symbols-a4.pdf)  \
-\
+[Comprehensive Latex Symbol List](http://mirror.ox.ac.uk/sites/ctan.org/info/symbols/comprehensive/symbols-a4.pdf)   \
+Latex Project [download info](https://www.latex-project.org/get/).  \
+readme2tex Python module [ref here](https://pypi.org/project/readme2tex/).  \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\tx7919\tx9073\tx10180\tx11378\tx12485\tx13589\tx14721\tx15868\tx17025\tx20300\pardeftab720\pardirnatural\partightenfactor0
 
 \f0\b \cf8   \
