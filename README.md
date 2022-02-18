@@ -1,6 +1,6 @@
 # Automake TOC for repo & add Latex maths to Readme.md
-REPO: [create_TOC_for_mark_down](https://gist.github.com/UnacceptableBehaviour/ad168b1b86a7695e9391ff063550c340)  
-See [References](#refs---12-activation-functions) for example linking to contents  
+REPO: [create_TOC_for_mark_down](https://github.com/UnacceptableBehaviour/create_TOC_for_md)  
+See [References](#references) for resources.  
 
 
 ## Abstract
@@ -35,7 +35,7 @@ Add table later if relevant.
 	2. [12 - Activation Functions](#12---activation-functions)  
 		1. [**Vid contents - 11 softmax & X-entropy**](#vid-contents---11-softmax--x-entropy)  
 		2. [Neural Network code example](#neural-network-code-example)  
-		3. [Refs - 12 activation functions](#refs---12-activation-functions)  
+7. [References](#references)  
 
 
 ## AIM:  
@@ -45,19 +45,26 @@ To be able to maintain a Readme.md doc with a table of contents and Latex equati
 
 ## How to use this tool.  
 ### Installing in repo  
-Download the install file:  
+Download the install file & run it to set up repo:   
+cd into relevant repo root directory.
 ```
-cd /lang/ruby/repos/nutri_scrape                      # cd into relevant repo root directory
-                                                      # download install file
+cd /lang/ruby/repos/nutri_scrape
+```
+  
+Download install file.
+```
 curl -L https://github.com/UnacceptableBehaviour/create_TOC_for_md/raw/main/install_createTOC.sh > install_createTOC.sh
-chmod +x install_createTOC.sh                         # make it executable
-./install_createTOC.sh                                # run it
 ```
-
+  
+Make it executable., and execute.
+```
+chmod +x install_createTOC.sh
+./install_createTOC.sh
+```
   
 ### Readme source RTF file
-DEFAULT_DOC_TO_PROCESS = Path('./scratch/EG_README_source.rtf')
-DEFAULT_README_RENDER_TEX_LOCAL = Path('./README.md')
+DEFAULT_DOC_TO_PROCESS = Path('./scratch/EG_README_source.rtf')  
+DEFAULT_README_RENDER_TEX_LOCAL = Path('./README.md')  
   
 ### Comments
 The source file can contain comments that will be removed from the copy that is put in the Readme.md file:  
@@ -84,7 +91,8 @@ Simple running
 create_TOC_for_md.py -p
 ```
   
-
+---
+  
 ## Some examples of Readme.md content  
 ### 11 - Softmax and Cross Entropy  
 ([vid](https://www.youtube.com/watch?v=7q7E91pHoW4&list=PLqnslRFeH2UrcDBWF5mfPGpqQDSta6VK4&index=12)) - 
@@ -193,10 +201,11 @@ Activation function decides, whether a neuron should be activated or not by c
 [Activation functions - wikiP](https://en.wikipedia.org/wiki/Activation_function).  
 
 
-#### Refs - 12 activation functions
-Pytorch Modules [ref here](https://pytorch.org/docs/stable/generated/torch.nn.Module.html).  
-Example pipeline [digit identifier](https://pytorch.org/tutorials/beginner/blitz/neural_networks_tutorial.html).  
-
+## References  
+readme2tex Python module [ref here](https://pypi.org/project/readme2tex/).  
+Latex Project [download info](https://www.latex-project.org/get/).  
+GitHub Markdown [getting started](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).  
+  
 ---
 
 
